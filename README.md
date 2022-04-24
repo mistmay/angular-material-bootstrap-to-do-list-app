@@ -1,3 +1,5 @@
+To-Do-List app made with Angular, Material, Bootstrap, Typescript, Html and Scss
+
 # MaterialToDo
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.1.

@@ -1,0 +1,20 @@
+<aside class="bg-dark h-100 p-3">
+  <mat-card>
+    <form [formGroup]="todoForm">
+      <mat-form-field appearance="outline" class="w-100">
+        <mat-label>Task Name</mat-label>
+        <input matInput placeholder="Task Name" formControlName="item">
+        <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+        <mat-hint>Add Task Name</mat-hint>
+      </mat-form-field>
+      <button mat-raised-button color="primary" [disabled]="todoForm.invalid" (click)="addTask()"
+        *ngIf="!isEditEnabled">
+        Add
+      </button>
+      <button mat-raised-button color="primary" [disabled]="todoForm.invalid" (click)="editTask()"
+        *ngIf="isEditEnabled">
+        Update
+      </button>
+    </form>
+  </mat-card>
+</aside>
